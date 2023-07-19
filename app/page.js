@@ -1,10 +1,9 @@
 
-import { ModeToggle } from "@/components/mode-toggle"
+import MapsOverlay from "@/components/mapsoverlay"
 export default function Home() {
   return (
     <div>
-      Maps
-      <ModeToggle />
+      <MapsOverlay />
     </div>
   )
 }
