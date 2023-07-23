@@ -127,6 +127,60 @@ function MapComponent() {
             >
               Greenlake
             </Button>
+            <Button
+              variant="ghost"
+              className="rounded-md border px-4 py-2 font-mono text-sm shadow-sm"
+              onClick={() =>
+                handleButtonClick(47.63228395539991, -122.35788865784752, "Queen Anne")
+              }
+            >
+              Queen Anne
+            </Button>
+            <Button
+              variant="ghost"
+              className="rounded-md border px-4 py-2 font-mono text-sm shadow-sm"
+              onClick={() =>
+                handleButtonClick(47.6255070727911, -122.33435879336113, "South Lake Union")
+              }
+            >
+              South Lake Union
+            </Button>
+            <Button
+              variant="ghost"
+              className="rounded-md border px-4 py-2 font-mono text-sm shadow-sm"
+              onClick={() =>
+                handleButtonClick(47.614729821907325, -122.34542409537829, "Belltown")
+              }
+            >
+              Belltown
+            </Button>
+            <Button
+              variant="ghost"
+              className="rounded-md border px-4 py-2 font-mono text-sm shadow-sm"
+              onClick={() =>
+                handleButtonClick(47.66138883890553, -122.34229873295514, "Wallingford")
+              }
+            >
+              Wallingford
+            </Button>
+            <Button
+              variant="ghost"
+              className="rounded-md border px-4 py-2 font-mono text-sm shadow-sm"
+              onClick={() =>
+                handleButtonClick(47.66277620992284, -122.31376003045233, "University Distict")
+              }
+            >
+              University Distict
+            </Button>
+            <Button
+              variant="ghost"
+              className="rounded-md border px-4 py-2 font-mono text-sm shadow-sm"
+              onClick={() =>
+                handleButtonClick(47.59900096588884, -122.326352149519, "International Distict")
+              }
+            >
+              International Distict
+            </Button>
           </CollapsibleContent>
           <Button
             variant="ghost"
@@ -180,7 +234,7 @@ function createTransitionOverlay(map) {
         if (mapOptions.tilt < 70) {
           mapOptions.tilt += 0.09;
         } else if (mapOptions.zoom < 17) {
-          mapOptions.zoom += 0.01;
+          mapOptions.zoom += 0.02;
         } else if (mapOptions.heading < 100) {
           mapOptions.heading += 0.2;
         } else {

@@ -16,10 +16,10 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex flex-col">
-          <div className="flex justify-end">
-          <ModeToggle />
-          </div>
-          {children}
+            <div className="flex justify-end mr-5 mt-5">
+              <ModeToggle />
+            </div>
+            {children}
           </div>
         </ThemeProvider>
       </body>
