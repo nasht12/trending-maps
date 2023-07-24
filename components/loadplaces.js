@@ -35,7 +35,7 @@ function MapComponent() {
     markerRef.current = new window.google.maps.Marker({ map: instance });
     const autocompleteService = new google.maps.places.AutocompleteService();
 
-    autocompleteService.getQueryPredictions({ input: "seattle", types: ['(regions)'] }, (predictions, status) => {
+    autocompleteService.getQueryPredictions({ input: "seattle", types: ['(All)'] }, (predictions, status) => {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
           // Filter and extract the neighborhoods from the predictions
           const neighborhoods = predictions.map(prediction => prediction.description);
@@ -56,5 +56,3 @@ function MapComponent() {
     </div>
   );
 }
-
-

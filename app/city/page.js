@@ -3,6 +3,8 @@ import React from "react";
 import { useLoadScript } from "@react-google-maps/api";
 import NeighborhoodsInCity from "@/components/neighborhoods";
 import LoadPlaces from "@/components/loadplaces";
+import VideoPlayer from "@/components/aerialvideo";
+import CrabOverlay from "@/components/craboverlay";
 
 const City = () => {
   const { isLoaded } = useLoadScript({
@@ -14,10 +16,13 @@ const City = () => {
 
   return (
     <div>
-       <NeighborhoodsInCity />;
-    <LoadPlaces />
+      <NeighborhoodsInCity />;
+      <LoadPlaces />
+      <h1>Video Player</h1>
+      {/* <VideoPlayer /> */}
+      <CrabOverlay />
     </div>
-  )
+  );
 };
 
 export default City;
